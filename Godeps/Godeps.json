@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/kubernetes/kubedash",
+	"ImportPath": "k8s.io/kubedash",
 	"GoVersion": "go1.4.2",
 	"Packages": [
 		"./..."

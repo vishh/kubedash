@@ -8,6 +8,18 @@
     <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-lg-offset-2">
       <table class="table table-hover clickable" ng-table="tableParams">
         <tbody>
+          <tr ng-click="goTo(rc.name)" ng-repeat="rc in items">
+            <td data-title="'Name'" sortable="'name'">
+              {{rc.name}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-lg-offset-2">
+      <table class="table table-hover clickable" ng-table="tableParams">
+        <tbody>
           <tr ng-click="goTo(ns.name)" ng-repeat="ns in items">
             <td data-title="'Name'" sortable="'name'">
               {{ns.name}}

@@ -12,7 +12,7 @@ clean:
 	rm -f kubedash
 
 container: build
-		docker build -t $(PREFIX)/kubedash:$(TAG) .
+	    docker build -t $(PREFIX)/kubedash:$(TAG) .
 
 sanitize:
 	hooks/check_boilerplate.sh

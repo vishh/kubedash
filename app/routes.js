@@ -68,6 +68,10 @@ angular.module('kubedash').config(['$locationProvider', '$routeProvider', '$prov
         templateUrl : 'pages/container.html',
         controller : 'freeContainerUtil',
       })
+      .when('/namespace/:namespace/rc/:rcname', {
+        templateUrl : 'pages/rc.html',
+        controller : 'rcUtil',
+      })
 
       .otherwise({
         redirectTo: '/'

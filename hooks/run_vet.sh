@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FILES=$(go vet github.com/kubernetes/kubedash/...)
+FILES=$(go vet k8s.io/kubedash/...)
 if [[ ! -z "$FILES" ]]; then
 echo Run go fix on the following files:$'\n' $FILES
   exit 1
